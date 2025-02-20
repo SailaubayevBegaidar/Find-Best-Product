@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Compare Products - Find Best Product</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo">Find Best Product</a>
+            <ul class="nav-links">
+                <li><a href="/products">Products</a></li>
+                <li><a href="/compare">Compare</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="compare-container">
+            <h2>Compare Products</h2>
+            <div class="search-box">
+                <input type="text" id="productSearch" placeholder="Search product...">
+                <button onclick="searchProducts()">Search</button>
+            </div>
+            <div id="compareResults" class="compare-results"></div>
+        </div>
+    </main>
+    <script src="{{ url_for('static', filename='js/compare.js') }}"></script>
+</body>
+</html>
